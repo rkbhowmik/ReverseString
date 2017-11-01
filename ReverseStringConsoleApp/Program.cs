@@ -16,7 +16,7 @@ namespace ReverseStringConsoleApp
 			var input = Console.ReadLine();
 			char[] inputarr = input.ToCharArray();
 			Array.Reverse(inputarr);
-			Console.WriteLine("Reversed order: " + new String(inputarr)); 
+			Console.WriteLine("Reversed order: " + new String(inputarr)); // instead of string output = new String(inputarr) 
 			Console.ReadLine();
 		}
 	}
