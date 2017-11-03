@@ -10,7 +10,7 @@ namespace ReverseStringConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("******** A program to reverse an input string using helper method********\n\n ");
+			Console.WriteLine("******** A program to reverse an input string using helper method ********\n\n ");
 
 			Console.Write("Enter your word: ");
 			var input = Console.ReadLine();
