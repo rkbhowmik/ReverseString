@@ -10,14 +10,31 @@ namespace ReverseStringConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("******** A program to reverse an input string ********\n\n ");
+			Console.WriteLine("******** A program to reverse an input string using helper method********\n\n ");
 
 			Console.Write("Enter your word: ");
 			var input = Console.ReadLine();
-			char[] inputarr = input.ToCharArray();
-			Array.Reverse(inputarr);
-			Console.WriteLine("Reversed order: " + new String(inputarr)); // instead of string output = new String(inputarr) 
+
+			Console.Write("Results:");
+
+			DisplayResult(
+			ReverseString(input));
+
 			Console.ReadLine();
 		}
+
+			private static string ReverseString(string message)
+			{
+				char[] messageArray = message.ToArray();
+				Array.Reverse(messageArray);
+				return String.Concat(messageArray);
+			}
+
+			private static void DisplayResult(string reversedLine)
+			{
+				Console.WriteLine("{0}", reversedLine); 
+			}
+		}
 	}
-}
+
+
